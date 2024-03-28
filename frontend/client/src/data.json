@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Async case",
+      "code": "const fetchData = async () => {\n  const response = await fetch('https://api.example.com/data');\n  const data = await response.json();\n  console.log(data);\n};\n\nfetchData();",
+      "solution": "const fetchData = async () => {\n  const response = await fetch('https://api.example.com/data');\n  const data = await response.json();\n  console.log(data);\n};\n\nfetchData();"
+    },
+    {
+      "id": 2,
+      "title": "Promise example",
+      "code": "const fetchData = () => {\n  return fetch('https://api.example.com/data')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.error(error));\n};\n\nfetchData();",
+      "solution": "const fetchData = () => {\n  return fetch('https://api.example.com/data')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.error(error));\n};\n\nfetchData();"
+    },
+    {
+      "id": 3,
+      "title": "Event handling",
+      "code": "document.getElementById('btn').addEventListener('click', () => {\n  console.log('Button clicked');\n});",
+      "solution": "document.getElementById('btn').addEventListener('click', () => {\n  console.log('Button clicked');\n});"
+    },
+    {
+      "id": 4,
+      "title": "State management",
+      "code": "class Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count++;\n    console.log('Count:', this.count);\n  }\n}\n\nconst counter = new Counter();\ncounter.increment();",
+      "solution": "class Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count++;\n    console.log('Count:', this.count);\n  }\n}\n\nconst counter = new Counter();\ncounter.increment();"
+    }
+  ]
+  
